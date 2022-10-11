@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layouts",
+  "info": {
+    "singularName": "layout",
+    "pluralName": "layouts",
+    "displayName": "layout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "qr_code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "qr_code_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "copy_right": {
+      "type": "string"
+    },
+    "site_number": {
+      "type": "string"
+    },
+    "public_number": {
+      "type": "string"
+    }
+  }
+}
